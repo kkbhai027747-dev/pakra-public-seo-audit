@@ -1,0 +1,12 @@
+{
+  "baseUrl": "https://example.com",
+  "paths": ["/", "/robots.txt", "/sitemap.xml", "/products/example-product", "/pages/example-catalog", "/collections/example-collection", "/collections/example-collection?sort_by=price-ascending", "/search?q=example", "/pages/about-us"],
+  "concurrency": 4,
+  "maxChildSitemaps": 10,
+  "timeoutMs": 35000,
+  "pageSpeed": false,
+  "contentChecks": {
+    "hasMoon11QuickAnswers": "Moon 11 quick answers",
+    "hasChooseYourFormat": "Choose your format"
+  }
+}

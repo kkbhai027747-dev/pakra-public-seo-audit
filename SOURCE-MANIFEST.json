@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "packagedOn": "2026-09-22",
+  "sourceRootMeaning": "Original source paths are relative to the original workspace, without personal machine paths.",
+  "entries": [
+    {
+      "path": "src/audit.mjs",
+      "source": "output/seo-geo-checklist-20260920/read_public_seo.mjs",
+      "sourceSha256": "99898b724ffbfdf28bb27d534ffbb385b34ad31258d6a205d0fb8e5e13c40461",
+      "packagedSha256": "3fe00489a647e13bcc958e3f16a4bfd838b871822e7386a043fe3052413f3b76",
+      "changes": [
+        "Separated pure parsing, configuration, requests and CLI output; importing the module has no side effects.",
+        "Removed machine paths, fixed base URL and date. Configurable public samples and literal content checks.",
+        "Injected fetch/clock for offline testing; bounded concurrency and deduplicated child sitemap sampling.",
+        "Preserved public-page, robots, sitemap and JSON-LD evidence; corrected internal origin matching and type-array parsing.",
+        "PageSpeed optional and disabled by default. No credentials, Admin API, deployment commands or old audit output included.",
+        "CLI refuses to overwrite an existing report; content-copy flags now live under contentChecks.",
+        "Reject page and optional PageSpeed redirects with redirect:error, and check URL-decoded private paths including optional locale prefixes. Eight offline tests cover request options and URL rejection."
+      ]
+    }
+  ],
+  "generatedFiles": [
+    "README.md",
+    "package.json",
+    ".gitignore",
+    "config/example.json",
+    "tests/audit.test.mjs"
+  ],
+  "excluded": [
+    "Parallel Python implementation",
+    "Historical reports and screenshots",
+    "Store-specific runtime configuration"
+  ]
+}
